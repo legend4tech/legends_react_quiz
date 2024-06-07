@@ -190,7 +190,7 @@ function App() {
           />
         )}
         {status === "active" && (
-          <>
+          <div className="ActiveQuestion">
             <Progress
               index={index}
               numQuestions={numQuestions}
@@ -212,7 +212,7 @@ function App() {
                 numQuestions={numQuestions}
               />
             </Footer>
-          </>
+          </div>
         )}
         {status === "finished" && (
           <FinishScreen

@@ -316,4 +316,7 @@ progress {
     font-family: "Codystar";
     font-size: 4 rem;
   }
+  .ActiveQuestion {
+    padding: 1rem;
+  }
 }
