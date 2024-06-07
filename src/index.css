@@ -301,10 +301,11 @@ progress {
 }
 @media (max-width: 600px) {
   html {
-    font-size: 35%;
+    font-size: 45%;
   }
 
   .app-header {
+    flex-direction: column;
     justify-content: space-evenly;
   }
   img {
