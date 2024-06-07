@@ -12,7 +12,7 @@ This application allows users to take quizzes on various topics. It's a great wa
 - Score tracking
 - User-friendly interface
 - Easy navigation
-- Question filter
+- Question filtering
 
 ## Usage
 
