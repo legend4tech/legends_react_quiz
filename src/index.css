@@ -314,7 +314,48 @@ progress {
 
   h1 {
     font-family: "Codystar";
-    font-size: 4rem;
+    font-size: 4 rem;
+  }
+  .ActiveQuestion {
+    padding: 1rem;
+  }
+}
+@media (max-width: 330px) {
+  html {
+    font-size: 40%;
+  }
+
+  .app-header {
+    flex-direction: column;
+  }
+  img {
+    width: 14rem;
+  }
+
+  h1 {
+    font-family: "Codystar";
+    font-size: 4 rem;
+  }
+  .ActiveQuestion {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 200px) {
+  html {
+    font-size: 18%;
+  }
+
+  .app-header {
+    flex-direction: column;
+  }
+  img {
+    width: 14rem;
+  }
+
+  h1 {
+    font-family: "Codystar";
+    font-size: 4 rem;
   }
   .ActiveQuestion {
     padding: 1rem;
