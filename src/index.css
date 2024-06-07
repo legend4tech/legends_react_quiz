@@ -274,3 +274,30 @@ progress {
   font-size: inherit;
   padding: 0.8rem;
 }
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 50%;
+  }
+  img {
+    width: 14rem;
+  }
+
+  h1 {
+    font-family: "Codystar";
+    font-size: 5rem;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 35%;
+  }
+  img {
+    width: 14rem;
+  }
+
+  h1 {
+    font-family: "Codystar";
+    font-size: 5rem;
+  }
+}
