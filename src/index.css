@@ -59,6 +59,7 @@ body {
 
 img {
   width: 14rem;
+  animation: rotateVertical 5s infinite linear;
 }
 
 h1 {
@@ -258,6 +259,16 @@ progress {
   }
 }
 
+@keyframes rotateVertical {
+  /* Rotate the logo 360 degrees */
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* ********** */
 /* First counter example */
 .counter {
@@ -292,12 +303,16 @@ progress {
   html {
     font-size: 35%;
   }
+
+  .app-header {
+    justify-content: space-evenly;
+  }
   img {
     width: 14rem;
   }
 
   h1 {
     font-family: "Codystar";
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
 }
