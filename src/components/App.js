@@ -73,6 +73,7 @@ function reducer(state, action) {
         status: "finished",
         highScore:
           state.points > state.highScore ? state.points : state.highScore,
+        difficulty: "none",
       };
 
     case "restart":
@@ -89,7 +90,6 @@ function reducer(state, action) {
         answer: null,
         points: 0,
         secondsRemaining: null,
-        difficulty: "none",
       };
 
     case "tick":
