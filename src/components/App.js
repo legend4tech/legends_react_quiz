@@ -74,20 +74,24 @@ function reducer(state, action) {
         highScore:
           state.points > state.highScore ? state.points : state.highScore,
       };
+
     case "restart":
       return {
-        ...initialState,
-        questions: state.questions,
+        ...state,
+        questions:
+          state.difficulty === "none"
+            ? state.originalQuestions
+            : state.originalQuestions.filter(
+                (question) => question.difficulty === state.difficulty
+              ),
         status: "ready",
+        index: 0,
+        answer: null,
+        points: 0,
+        secondsRemaining: null,
+        difficulty: "none",
       };
-    // return {
-    //   ...state,
-    //   status: "ready",
-    //   index: 0,
-    //   answer: null,
-    //   points: 0,
-    //   highScore: 0,
-    // };
+
     case "tick":
       return {
         ...state,
@@ -131,11 +135,13 @@ function App() {
     },
     dispatch,
   ] = useReducer(reducer, initialState);
+
   const numQuestions = questions.length;
   const maxPossiblePoints = questions.reduce(
     (prev, cur) => prev + cur.points,
     0
   );
+
   useEffect(() => {
     const fetchData = async () => {
       try {
