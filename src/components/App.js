@@ -1,4 +1,5 @@
 import { useEffect, useReducer } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import Header from "./Header";
 import Main from "./Main";
 import Loader from "./Loader";
@@ -229,6 +230,7 @@ function App() {
           />
         )}
       </Main>
+      <SpeedInsights />
     </div>
   );
 }
